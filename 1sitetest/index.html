@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Полезные сайты</title>
+    <link rel="stylesheet" href="style.css">
+ 
+
+    <!-- Подключение шрифта Roboto (по желанию) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Roboto', sans-serif; /* Использование подключенного шрифта */
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-bottom: 5px solid #2980b9;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        h2 {
+            text-align: center;
+            color: #3498db;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .site-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .site-list li {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .site-list li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-list a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+        }
+
+        .site-list a:hover {
+            color: #2980b9;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .site-list {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .site-list li {
+                padding: 1rem;
+            }
+
+            .site-list a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hubba</h1>
+</header>
+
+<main>
+    <h2>Лучшие ресурсы для вас</h2>
+    <ul class="site-list">
+        <li>
+            <a href="https://www.google.com" target="_blank">
+                Google
+                <p>Поиск информации в интернете.</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com" target="_blank">
+                YouTube
+                <p>Смотри то, что нужно.</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.wikipedia.org" target="_blank">
+                Wikipedia
+                <p>Узнай о чем хочешь.</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.stackoverflow.com" target="_blank">
+                StackOverflow
+                <p>Форум для программистов с ответами на технические вопросы.</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.github.com" target="_blank">
+                GitHub
+                <p>Разработка и хранение кода.</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.reddit.com" target="_blank">
+                Reddit
+                <p>Форумы и обсуждения по множеству тем.</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://scratch.mit.edu" target="_blank">
+                Scratch
+                <p>Создавай что хочешь на легком языке.</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://chatgpt.com/" target="_blank">
+                ChatGPT
+                <p>Помощник во всем.</p>
+            </a>
+        </li>
+    </ul>
+
+    <h2>Создано с любовью вместе с Расулом и Ерусалимом</h2>
+</main>
+
+</body>
+</html>
